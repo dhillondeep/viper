@@ -349,6 +349,9 @@ func (v *Viper) WatchConfig() {
 	initWG.Wait() // make sure that the go routine above fully ended before returning
 }
 
+func SetKeyDelim(delim string) { v.keyDelim = delim }
+func (v *Viper) SetKeyDelim(delim string) { v.keyDelim = delim }
+
 // SetConfigFile explicitly defines the path, name and extension of the config file.
 // Viper will use this and not check any of the config paths.
 func SetConfigFile(in string) { v.SetConfigFile(in) }
