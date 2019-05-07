@@ -24,7 +24,7 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/mitchellh/mapstructure"
-	"github.com/spf13/afero"
+	"github.com/dhillondeep/afero"
 	"github.com/spf13/cast"
 
 	"github.com/spf13/pflag"
